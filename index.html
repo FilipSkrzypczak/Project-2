@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jura"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a8c6af76b7.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project2</title>
+  </head>
+
+  <body>
+    <h2 class="title">
+      <a href="https://filipskrzypczak.github.io/Portfolio/"
+        ><img src="../../../img/logo.png" class="logo2" />
+      </a>
+      <span>Mine Tower</span>
+      <i class="fas fa-bomb reload" onClick="window.location.reload()"></i>
+    </h2>
+    <section id="wrapper">
+      <div class="score-panel">
+        <div class="scores">
+          <div class="bet">
+            <h4 class="score-title">Bet</h4>
+            <div class="bet-elements"></div>
+          </div>
+          <div class="profit">
+            <h4 class="score-title">Profit</h4>
+            <div class="profit-elements"></div>
+          </div>
+          <div class="wager">
+            <h4 class="score-title">Steps</h4>
+            <div class="wager-elements"></div>
+          </div>
+        </div>
+      </div>
+      <div class="game-panel">
+        <div class="board">
+          <div class="floors">
+            <h3>Choose a difficulty !</h3>
+          </div>
+        </div>
+        <div class="game-settings">
+          <button class="play-btn btn">START</button>
+          <div class="bid-panel">
+            <form>
+              <i class="fas fa-minus minus"></i>
+              <input type="number" placeholder="$" class="bid" />
+              <i class="fas fa-plus plus"></i>
+            </form>
+          </div>
+          <div class="difficulty-panel">
+            <div data-diff="easy" style="color: mediumseagreen">Easy</div>
+            <div data-diff="medium" style="color: goldenrod">Medium</div>
+            <div data-diff="hard" style="color: indianred">Hard</div>
+          </div>
+        </div>
+      </div>
+      <div class="wallet-panel">
+        <div class="wallet">
+          <h4>
+            Money: <span class="money">1000.00</span>
+            <span style="color: limegreen">$</span>
+          </h4>
+          <h4>Games played: <span class="games">0</span></h4>
+        </div>
+        <div class="info">
+          <i class="fas fa-info-circle"></i>
+          <h3 class="text-center">Mine Tower Info</h3>
+          <p class="lead text-center">
+            Minesweeper based game. Can you reach the top of the tower?
+          </p>
+          <h4>How to play:</h4>
+          <ul>
+            <li>Choose a difficulty.</li>
+            <li>Enter a bet value.</li>
+            <li>Click <span style="font-weight: bold">START</span> button.</li>
+            <li>
+              Pick one of the 3 (<span style="font-style: italic"
+                >amount depends on difficulty</span
+              >) <span style="color: lime">highlighted</span> cells on the
+              board.
+            </li>
+            <li>
+              The <span style="color: lime">good</span> cell contains $ sign and
+              the <span style="color: red">bad</span> cell contains bomb sign.
+            </li>
+            <li>
+              If you chosed good cell you are able to continue the game or
+              withdraw the value of the chosen cell. If you chosed bad cell you
+              lose the amount of money you've bet in that game.
+            </li>
+            <span style="font-style: italic"
+              >You can relad page by clicking the bomb icon in the title of the
+              page.</span
+            >
+          </ul>
+          <span style="font-weight: bold">Difficulty:</span>
+          <p class="info-diff">
+            <span style="color: mediumseagreen">EASY - 1 bomb / 3 cells</span>
+            <span style="color: goldenrod">MEDIUM - 1 bomb / 2 cells</span>
+            <span style="color: indianred">HARD - 2 bomb / 3 cells</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
