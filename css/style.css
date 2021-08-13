@@ -242,6 +242,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: scroll;
 }
 
 #wrapper .score-panel .scores > div {
